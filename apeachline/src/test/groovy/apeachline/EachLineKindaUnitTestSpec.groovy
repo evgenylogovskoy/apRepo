@@ -34,6 +34,19 @@ class EachLineKindaUnitTestSpec extends Specification {
 		then: "Verify the last value returned by the closure"
 			result == "and this is a last line"
 	}
+	
+	
+	def "Check if it returns the last value returned by closure"(){
+		
+		given:
+			def multiLineString = "\nThis is simple multiline string,\nthat I chose for simple test\nand this is a last line"
+			
+		when: "Iterate through the given String"
+			def result = multiLineString.eachLine{it}
+							
+		then: "Verify the last value returned by the closure"
+			result =! "and this is a last line"
+	}
 			
 	def "Test firstLine parameter default"(){
 		
