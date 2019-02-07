@@ -1,5 +1,6 @@
 package apeachline
 
+import Helper.TestCaseId
 import spock.lang.*
 
 /**
@@ -8,7 +9,8 @@ import spock.lang.*
  */
 
 class EachLineKindaUnitTestSpec extends Specification {
-	
+
+	@TestCaseId(testCaseId =  "88446")
 	def "Verify if eachLine method iterates through each line"(){
 		
 		given:
