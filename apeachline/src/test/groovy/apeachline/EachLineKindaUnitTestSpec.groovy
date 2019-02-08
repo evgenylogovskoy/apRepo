@@ -24,7 +24,7 @@ class EachLineKindaUnitTestSpec extends Specification {
 		then: "Verify each element of the actualResultsList"
 			actualResultsList == ["", "line2", "line3"]
 	}
-	@TestRail(testCaseId =  "222222")
+	@TestRail(testCaseId =  "108343")
 	def "Check if it returns the last value returned by closure"(){
 		
 		given:
