@@ -58,7 +58,7 @@ class EachLineKindaUnitTestSpec extends Specification {
 		then: "Verify first line "
 			actualString == "This is simple multiline string,"
 	}
-	@TestRail(testCaseId =  "4444444")
+
 	def "Test firstLine parameter custom"(){
 		
 		given:
