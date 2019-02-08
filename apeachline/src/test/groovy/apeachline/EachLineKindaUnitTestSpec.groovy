@@ -1,6 +1,6 @@
 package apeachline
 
-import Helper.TestCaseId
+import anno.TestRail
 import spock.lang.*
 
 /**
@@ -10,7 +10,7 @@ import spock.lang.*
 
 class EachLineKindaUnitTestSpec extends Specification {
 
-	@TestCaseId(testCaseId =  "88446")
+	@TestRail(testCaseId =  "111111")
 	def "Verify if eachLine method iterates through each line"(){
 		
 		given:
@@ -23,8 +23,8 @@ class EachLineKindaUnitTestSpec extends Specification {
 							
 		then: "Verify each element of the actualResultsList"
 			actualResultsList == ["", "line2", "line3"]
-	}	
-	
+	}
+	@TestRail(testCaseId =  "222222")
 	def "Check if it returns the last value returned by closure"(){
 		
 		given:
@@ -36,7 +36,7 @@ class EachLineKindaUnitTestSpec extends Specification {
 		then: "Verify the last value returned by the closure"
 			result == "and this is a last line"
 	}
-			
+	@TestRail(testCaseId =  "33333")
 	def "Test firstLine parameter default"(){
 		
 		given:
@@ -58,7 +58,7 @@ class EachLineKindaUnitTestSpec extends Specification {
 		then: "Verify first line "
 			actualString == "This is simple multiline string,"
 	}
-	
+	@TestRail(testCaseId =  "4444444")
 	def "Test firstLine parameter custom"(){
 		
 		given:
