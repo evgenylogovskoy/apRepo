@@ -12,7 +12,7 @@ import spock.lang.*
 @TestRailSuite(testSuiteName = "NewSuite")
 class EachLineKindaUnitTestSpec extends Specification {
 
-	@TestRailTest(testCaseId =  "108343", testCaseName =  "Some title")
+	@TestRailTest(testCaseId =  "108343", testCaseName =  "Some title 1")
 	def "Verify if eachLine method iterates through each line"(){
 		
 		given:
@@ -26,7 +26,7 @@ class EachLineKindaUnitTestSpec extends Specification {
 		then: "Verify each element of the actualResultsList"
 			actualResultsList == ["", "line2", "line3"]
 	}
-	@TestRailTest(testCaseId =  "108344")
+	@TestRailTest(testCaseId =  "108344", testCaseName =  "Some title 2")
 	def "Check if it returns the last value returned by closure"(){
 		
 		given:
@@ -38,7 +38,7 @@ class EachLineKindaUnitTestSpec extends Specification {
 		then: "Verify the last value returned by the closure"
 			result == "and this is a last line"
 	}
-	@TestRailTest(testCaseId =  "108345")
+	@TestRailTest(testCaseId =  "108345", testCaseName =  "Some title 3")
 	def "Test firstLine parameter default"(){
 		
 		given:
@@ -60,7 +60,7 @@ class EachLineKindaUnitTestSpec extends Specification {
 		then: "Verify first line "
 			actualString == "This is simple multiline string,"
 	}
-	@TestRailTest(testCaseId =  "108346")
+	@TestRailTest(testCaseId =  "108346", testCaseName =  "Some title 4")
 	def "Test firstLine parameter custom"(){
 		
 		given:
