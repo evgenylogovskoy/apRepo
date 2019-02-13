@@ -1,16 +1,18 @@
 package apeachline
 
-import anno.TestRail
+
+import anno.TestRailSuite
+import anno.TestRailTest
 import spock.lang.*
 
 /**
  * @author  Alex Poddubnyi
  * Below test cases are valid for File object as well
  */
-
+@TestRailSuite(testSuiteName = "NewSuite")
 class EachLineKindaUnitTestSpec extends Specification {
 
-	@TestRail(testCaseId =  "108343")
+	@TestRailTest(testCaseId =  "108343", testCaseName =  "Some title")
 	def "Verify if eachLine method iterates through each line"(){
 		
 		given:
@@ -24,7 +26,7 @@ class EachLineKindaUnitTestSpec extends Specification {
 		then: "Verify each element of the actualResultsList"
 			actualResultsList == ["", "line2", "line3"]
 	}
-	@TestRail(testCaseId =  "108344")
+	@TestRailTest(testCaseId =  "108344")
 	def "Check if it returns the last value returned by closure"(){
 		
 		given:
@@ -36,7 +38,7 @@ class EachLineKindaUnitTestSpec extends Specification {
 		then: "Verify the last value returned by the closure"
 			result == "and this is a last line"
 	}
-	@TestRail(testCaseId =  "108345")
+	@TestRailTest(testCaseId =  "108345")
 	def "Test firstLine parameter default"(){
 		
 		given:
@@ -58,7 +60,7 @@ class EachLineKindaUnitTestSpec extends Specification {
 		then: "Verify first line "
 			actualString == "This is simple multiline string,"
 	}
-	@TestRail(testCaseId =  "108346")
+	@TestRailTest(testCaseId =  "108346")
 	def "Test firstLine parameter custom"(){
 		
 		given:

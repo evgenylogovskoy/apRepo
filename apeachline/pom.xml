@@ -101,7 +101,7 @@
       <dependency>
           <groupId>com.jfrog</groupId>
           <artifactId>TestRailHelper</artifactId>
-          <version>1.3-SNAPSHOT</version>
+          <version>1.4-SNAPSHOT</version>
           <scope>system</scope>
           <systemPath>/media/evgeny/Data/Projects/test/apRepo/TestRailHelper/out/artifacts/TestRailHelper_jar/TestRailHelper.jar</systemPath>
       </dependency>
