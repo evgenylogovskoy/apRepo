@@ -9,10 +9,10 @@ import spock.lang.*
  * @author  Alex Poddubnyi
  * Below test cases are valid for File object as well
  */
-@TestRailSuite(testSuiteName = "NewSuite")
+@TestRailSuite(testSuiteName = "a.Jfrog")
 class EachLineKindaUnitTestSpec extends Specification {
 
-	@TestRailTest(testCaseId =  "1083433", testCaseName =  "Soddffefa 12")
+	@TestRailTest(testCaseId =  "108333", testCaseName =  "Test case #1")
 	def "Verify if eachLine method iterates through each line"(){
 		
 		given:
@@ -27,7 +27,7 @@ class EachLineKindaUnitTestSpec extends Specification {
 			actualResultsList == ["", "line2", "line3"]
 	}
 
-	@TestRailTest(testCaseName =  "Created test for add")
+	@TestRailTest(testCaseName =  "Test case #2")
 	def "new test for add"(){
 
 		given:
@@ -41,7 +41,7 @@ class EachLineKindaUnitTestSpec extends Specification {
 		then: "Verify each element of the actualResultsList"
 		actualResultsList == ["", "line2", "line3"]
 	}
-	@TestRailTest(testCaseId =  "108344", testCaseName =  "Some dasdaaaaa 23")
+	@TestRailTest(testCaseId =  "108344", testCaseName =  "Test case #3")
 	def "Check if it returns the last value returned by closure"(){
 		
 		given:
@@ -53,7 +53,7 @@ class EachLineKindaUnitTestSpec extends Specification {
 		then: "Verify the last value returned by the closure"
 			result == "and this is a last line"
 	}
-	@TestRailTest(testCaseId =  "108345", testCaseName =  "Somsadasdas32")
+	@TestRailTest(testCaseId =  "108345", testCaseName =  "Test case #4")
 	def "Test firstLine parameter default"(){
 		
 		given:
@@ -75,7 +75,7 @@ class EachLineKindaUnitTestSpec extends Specification {
 		then: "Verify first line "
 			actualString == "This is simple multiline string,"
 	}
-	@TestRailTest(testCaseId =  "108346", testCaseName =  "Sasddddsad3")
+	@TestRailTest(testCaseId =  "108346", testCaseName =  "Test case #5")
 	def "Test firstLine parameter custom"(){
 		
 		given:
