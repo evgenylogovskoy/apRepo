@@ -12,7 +12,7 @@ import spock.lang.*
 @TestRailSuite(testSuiteName = "NewSuite")
 class EachLineKindaUnitTestSpec extends Specification {
 
-	@TestRailTest(testCaseId =  "1083433", testCaseName =  "Soddffefa 12")
+	@TestRailTest(testCaseName =  "Soddffefa 12")
 	def "Verify if eachLine method iterates through each line"(){
 		
 		given:
