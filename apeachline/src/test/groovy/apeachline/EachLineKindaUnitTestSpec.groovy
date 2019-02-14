@@ -12,7 +12,7 @@ import spock.lang.*
 @TestRailSuite(testSuiteName = "NewSuite")
 class EachLineKindaUnitTestSpec extends Specification {
 
-	@TestRailTest(testCaseName =  "Soddffefa 1")
+	@TestRailTest(testCaseId =  "1083433", testCaseName =  "Soddffefa 12")
 	def "Verify if eachLine method iterates through each line"(){
 		
 		given:
@@ -25,6 +25,21 @@ class EachLineKindaUnitTestSpec extends Specification {
 							
 		then: "Verify each element of the actualResultsList"
 			actualResultsList == ["", "line2", "line3"]
+	}
+
+	@TestRailTest(testCaseName =  "Created test for add")
+	def "new test for add"(){
+
+		given:
+		def multiLineString = "\nline2\nline3"
+//			def multiLineString = new File("src/test/resources/multilineFile.txt")
+		def actualResultsList = []
+
+		when: "Iterate through the given String"
+		multiLineString.eachLine{actualResultsList << it}
+
+		then: "Verify each element of the actualResultsList"
+		actualResultsList == ["", "line2", "line3"]
 	}
 	@TestRailTest(testCaseId =  "108344", testCaseName =  "Some dasdaaaaa 23")
 	def "Check if it returns the last value returned by closure"(){
