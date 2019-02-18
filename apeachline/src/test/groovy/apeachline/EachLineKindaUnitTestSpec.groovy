@@ -12,7 +12,7 @@ import spock.lang.*
 @TestRailSuite(testSuiteName = "TestRailTestCases")
 class EachLineKindaUnitTestSpec extends Specification {
 
-	@TestRailTest(testCaseName =  "Verify if eachLine method iterates through each line")
+	@TestRailTest(testCaseId = "108903",testCaseName =  "Verify if eachLine method iterates through each line")
 	def "Test case №1"(){
 		
 		given:
@@ -27,7 +27,7 @@ class EachLineKindaUnitTestSpec extends Specification {
 			actualResultsList == ["", "line2", "line3"]
 	}
 
-	@TestRailTest(testCaseName =  "Verify each element of the actualResultsList")
+	@TestRailTest(testCaseId = "108904",testCaseName =  "Verify each element of the actualResultsList")
 	def "Test case №2"(){
 
 		given:
@@ -41,7 +41,7 @@ class EachLineKindaUnitTestSpec extends Specification {
 		then: "Verify each element of the actualResultsList"
 		actualResultsList == ["", "line2", "line3"]
 	}
-	@TestRailTest(testCaseName =  "Check if it returns the last value returned by closure")
+	@TestRailTest(testCaseId = "108905",testCaseName =  "Check if it returns the last value returned by closure")
 	def "Test case №3"(){
 		
 		given:
@@ -53,7 +53,7 @@ class EachLineKindaUnitTestSpec extends Specification {
 		then: "Verify the last value returned by the closure"
 			result == "and this is a last line"
 	}
-	@TestRailTest(testCaseName =  "Test firstLine parameter default")
+	@TestRailTest(testCaseId = "108906",testCaseName =  "Test firstLine parameter default")
 	def "Test case №4"(){
 		
 		given:
@@ -75,7 +75,7 @@ class EachLineKindaUnitTestSpec extends Specification {
 		then: "Verify first line "
 			actualString == "This is simple multiline string,"
 	}
-	@TestRailTest(testCaseName =  "Test firstLine parameter custom")
+	@TestRailTest(testCaseId = "108907",testCaseName =  "Test firstLine parameter custom")
 	def "Test case №5"(){
 		
 		given:
