@@ -6,7 +6,7 @@ import spock.lang.Specification
 @TestRailSuite(testSuiteName = "a.Jfrog2")
 class SecondTestSpec  extends Specification{
 
-    @TestRailTest(testCaseId =  "134234", testCaseName =  "asdddsad№1")
+
     def "Verify if eachLine method iterates through each line"(){
 
         given:
@@ -35,7 +35,7 @@ class SecondTestSpec  extends Specification{
         then: "Verify each element of the actualResultsList"
         actualResultsList == ["", "line2", "line3"]
     }
-    @TestRailTest(testCaseId =  "10238344", testCaseName =  "ddsasdasd№3")
+
     def "Check if it returns the last value returned by closure"(){
 
         given:
@@ -69,7 +69,7 @@ class SecondTestSpec  extends Specification{
         then: "Verify first line "
         actualString == "This is simple multiline string,"
     }
-    @TestRailTest(testCaseId =  "10833346", testCaseName =  "Test sdffff #5")
+    @TestRailTest(testCaseId =  "10833346")
     def "Test firstLine parameter custom"(){
 
         given:
