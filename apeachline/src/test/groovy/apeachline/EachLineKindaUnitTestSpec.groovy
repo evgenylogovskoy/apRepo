@@ -9,7 +9,7 @@ import spock.lang.*
  * @author  Alex Poddubnyi
  * Below test cases are valid for File object as well
  */
-@TestRailSuite(testSuiteName = "TestRailTestCases")
+@TestRailSuite(testSuiteName = "TestRailTestCases.newSection.hierarchy")
 class EachLineKindaUnitTestSpec extends Specification {
 
 	@TestRailTest(testCaseName =  "Verify if eachLine method iterates through each line")
