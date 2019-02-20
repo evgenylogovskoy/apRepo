@@ -26,7 +26,7 @@ class EachLineKindaUnitTestSpec extends Specification {
 			actualResultsList == ["", "line2", "line3"]
 	}
 
-	@TestRailTest(testCaseName =  "Verify each element of the actualResultsList")
+	@TestRailTest(testCaseId = "34412433",testCaseName =  "Verify each element of the actualResultsList")
 	def "Test case №2"(){
 
 		given:
